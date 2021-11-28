@@ -4,7 +4,7 @@ import {Nava} from "./Nava/Nava";
 
 export const Header = React.memo(() => {
         return (
-            <div className={styles.header}>
+            <div id={'header'} className={styles.header}>
                 <Nava/>
             </div>
         )

@@ -5,7 +5,7 @@ import {Project} from "./Project/Project";
 
 export const Projects = React.memo(() => {
     return (
-        <div className={styles.projects}>
+        <div id={'projects'} className={styles.projects}>
             <div className={`${commonStyles.container} ${styles.container}`}>
                 <h2 className={styles.title}>Projects</h2>
                 <div className={styles.projectsContainer}>

@@ -4,7 +4,7 @@ import commonStyles from './../../common/styles/CommonStyles.module.css'
 
 export const RemoteJob = React.memo(() => {
     return (
-        <div className={`${commonStyles.container} ${styles.container}`}>
+        <div id={'remote'} className={`${commonStyles.container} ${styles.container}`}>
             <h4 className={styles.question}>Remote Job?</h4>
             <span className={styles.answer}>Agree</span>
         </div>

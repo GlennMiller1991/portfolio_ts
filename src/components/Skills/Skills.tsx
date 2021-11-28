@@ -7,7 +7,7 @@ import {faJs} from "@fortawesome/free-brands-svg-icons/faJs";
 export const Skills = React.memo(() => {
     const fakeDescription = 'Dolores sit ipsum velit purus aliquet, massa fringilla leo the drana.'
     return (
-        <div className={styles.skills}>
+        <div id={'skills'} className={styles.skills}>
             <div className={`${commonStyles.container} ${styles.container}`}>
                 <h2 className={styles.title}>Skills</h2>
                 <div className={styles.skillsContainer}>

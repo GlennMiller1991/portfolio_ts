@@ -4,19 +4,20 @@ import styles from './Contacts.module.css'
 
 export const Contacts = React.memo(() => {
     return (
-        <div className={styles.wrapper}>
+        <div id={'contacts'} className={styles.wrapper}>
             <div className={`${commonStyles.container} ${styles.container}`}>
                 <h3 className={styles.title}>Contacts</h3>
                 <form className={styles.inputsContainer}>
                     <div className={styles.inputs}>
                         <div>
-                        <input value={'some text'}/>
+                            <input defaultValue={'some text'}/>
                         </div>
                         <div>
-                        <input value={'some text'}/>
+                            <input defaultValue={'some text'}/>
                         </div>
-                        <div  className={styles.textareaDiv}>
-                            <textarea className={styles.textarea}>some text</textarea>
+                        <div className={styles.textareaDiv}>
+                            <textarea className={styles.textarea}
+                                      defaultValue={'some text'}/>
                         </div>
                     </div>
                     <div>
@@ -24,6 +25,6 @@ export const Contacts = React.memo(() => {
                     </div>
                 </form>
             </div>
-</div>
-)
+        </div>
+    )
 })
