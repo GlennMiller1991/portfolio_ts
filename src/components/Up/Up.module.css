@@ -1,8 +1,8 @@
 .up {
     position: fixed;
     border: 1px solid red;
-    bottom: 50px;
-    right: 50px;
+    bottom: 5%;
+    left: 5%;
     opacity: 0;
     animation: show 2s forwards;
 }

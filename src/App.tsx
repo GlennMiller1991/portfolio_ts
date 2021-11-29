@@ -15,7 +15,7 @@ function App() {
     const onScrollWindow = useCallback(() => {
         const header = document.getElementById('header')
         if (header) {
-            const currentY = window.scrollY
+            const currentY = document.documentElement.scrollTop
             const headerHeight = header.offsetHeight
             if (currentY <= headerHeight) {
                 if (showUp) setShowUp(false)
@@ -27,7 +27,7 @@ function App() {
 
     //title useEffect
     useEffect(() => {
-        console.log('from title effect')
+       document.title = 'React developer'
     }, [])
 
 
