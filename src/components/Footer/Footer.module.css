@@ -1,0 +1,22 @@
+.footer {
+    height: 40vh;
+    background-color: blanchedalmond;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    background-color: darkgrey;
+    border: 1px solid green;
+}
+
+.socnetsContainer {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

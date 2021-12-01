@@ -7,6 +7,7 @@ import {Projects} from "./components/Projects/Projects";
 import {RemoteJob} from "./components/RemoteJob/RemoteJob";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Up} from "./components/Up/Up";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
     console.log('from app')
@@ -49,6 +50,7 @@ function App() {
             <Projects/>
             <RemoteJob/>
             <Contacts/>
+            <Footer/>
             {
                 showUp && <Up/>
             }
@@ -57,5 +59,4 @@ function App() {
 }
 
 export default App;
-
 
