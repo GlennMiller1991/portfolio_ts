@@ -14,3 +14,21 @@
     background-color: lightgreen;
 }
 
+.keyboardSpan {
+    color: #be6767;
+    animation: hideShow;
+    animation-iteration-count: infinite;
+    animation-duration: .7s;
+    animation-timing-function: steps(2, jump-none);
+}
+
+@keyframes hideShow {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
