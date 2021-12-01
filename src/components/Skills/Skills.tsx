@@ -14,6 +14,7 @@ export const Skills = React.memo(() => {
                     <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>
                     <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>
                     <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>
+                    <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>
                 </div>
             </div>
         </div>

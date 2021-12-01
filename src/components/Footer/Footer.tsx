@@ -12,7 +12,7 @@ export const Footer = React.memo(() => {
                 <div className={styles.socnetsContainer}>
                     <Socnet icon={faJs}/>
                     <Socnet icon={faJs}/>
-                    <Socnet icon={faJs}/>
+                        <Socnet icon={faJs}/>
                     <Socnet icon={faJs}/>
                 </div>
                 <div className={styles.copyright}>

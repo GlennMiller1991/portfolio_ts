@@ -19,7 +19,7 @@ export const ChangableSpan = React.memo(() => {
                         dispatch(changeReverse(true))
                     }, 2000)
                 }
-            }, Math.random() * (400 - 50) + 50)
+            }, Math.random() * (300 - 50) + 50)
         } else {
             setTimeout(() => {
                 if (typedCaption) {
@@ -27,7 +27,7 @@ export const ChangableSpan = React.memo(() => {
                 } else {
                     dispatch(endTypeCycle((state.count + 1) % state.mainSpans.length))
                 }
-            }, 300)
+            }, 200)
         }
     }, [state.typed, state.reverse, state.count, dispatch, state.mainSpans])
     return (
