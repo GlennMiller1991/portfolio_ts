@@ -1,0 +1,12 @@
+.cursor {
+    background: radial-gradient(
+            rgba(253, 2, 2, 1) 0%,
+            rgba(253, 2, 2, 1) 5%,
+            rgba(253, 2, 2, .1) 6%,
+            rgba(253, 2, 2, .001) 100%
+    );
+    position: fixed;
+    border-radius: 50%;
+    transition: transform 2500ms;
+    pointer-events: none;
+}
