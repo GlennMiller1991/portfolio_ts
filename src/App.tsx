@@ -1,4 +1,4 @@
-import React, {MouseEvent, useCallback, useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import './App.css';
 import {Header} from "./components/Header/Header";
 import {Main} from "./components/Main/Main";
@@ -8,13 +8,25 @@ import {RemoteJob} from "./components/RemoteJob/RemoteJob";
 import {Contacts} from "./components/Contacts/Contacts";
 import {Up} from "./components/Up/Up";
 import {Footer} from "./components/Footer/Footer";
-import {Cursor, cursorDefaultData} from "./components/Cursor/Cursor";
+import {anchorType, checkAnchorTC} from "./redux/reducer";
+import {useDispatch, useSelector} from "react-redux";
+import {stateType} from "./redux/store";
 
 function App() {
-    console.log('from app')
+    const currentAnchor = useSelector<stateType, anchorType>(state => state.state.currentAnchor)
+    const dispatch = useDispatch()
+    const [scrollY, setScrollY] = useState(0)
+    const [elements, setElements] = useState<HTMLDivElement[]>([])
+    const anchorsId: anchorType[] = useMemo(() => {
+        return ['main', 'skills', "contacts", "projects"]
+    }, [])
     const [showUp, setShowUp] = useState(false)
-    const [cursorPositon, setCursorPosition] = useState<number[]>([-100, -100])
     const onScrollWindow = useCallback(() => {
+        setScrollY(window.scrollY)
+    }, [])
+
+    //on scrolling execute
+    useEffect(() => {
         const header = document.getElementById('header')
         if (header) {
             const currentY = document.documentElement.scrollTop
@@ -25,41 +37,33 @@ function App() {
                 if (!showUp) setShowUp(true)
             }
         }
-    }, [showUp])
-    const onMouseMoveHandler = useCallback((e: MouseEvent<HTMLDivElement>) => {
-        setTimeout(() => {
-            setCursorPosition([
-                e.clientY - cursorDefaultData.cursorRadius,
-                e.clientX - cursorDefaultData.cursorRadius
-            ])
-        }, 100)
-    }, [])
+        dispatch(checkAnchorTC(elements, currentAnchor))
+    }, [scrollY, showUp])
 
-
-    //title useEffect
+    //get elements and add event listener
     useEffect(() => {
         document.title = 'React developer'
-    }, [])
-
-
-    //scroll
-    useEffect(() => {
-        console.log('from scroll effect')
+        const elements = []
+        for (let i = 0; i < anchorsId.length; i++) {
+            const elem = document.getElementById(anchorsId[i])
+            if (elem) {
+                elements.push(elem)
+            }
+        }
         window.addEventListener('scroll', onScrollWindow)
-
+        setElements(elements as HTMLDivElement[])
         return () => {
             window.removeEventListener('scroll', onScrollWindow)
         }
-    }, [onScrollWindow])
+    }, [])
 
     return (
-        <div className="App" onScroll={onScrollWindow} onMouseMove={onMouseMoveHandler}>
-            <Cursor top={cursorPositon[0]} left={cursorPositon[1]}/>
+        <div className="App">
             <Header/>
             <Main/>
             <Skills/>
             <Projects/>
-            <RemoteJob/>
+            {/*<RemoteJob/>*/}
             <Contacts/>
             <Footer/>
             {

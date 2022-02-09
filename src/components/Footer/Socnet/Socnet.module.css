@@ -1,10 +1,18 @@
 .icon {
     width: 50px;
     height: 50px;
-    background-color: #a25b5b;
-    font-size: 60px;
-    color: red;
+    border: 1px solid #31383d;
+    color: #F0F0F0;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: black;
+    background-color: #F0F0F0;
+    border: 1px solid #F0F0F0;
 }

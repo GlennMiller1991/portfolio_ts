@@ -8,7 +8,7 @@ type SocnetPropsType = {
 export const Socnet: React.FC<SocnetPropsType> = React.memo((props) => {
     return (
         <div className={styles.icon}>
-            <FontAwesomeIcon icon={props.icon}/>
+            <FontAwesomeIcon icon={props.icon} size={'xs'}/>
         </div>
     )
 })

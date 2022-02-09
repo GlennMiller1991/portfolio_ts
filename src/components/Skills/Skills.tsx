@@ -9,7 +9,10 @@ export const Skills = React.memo(() => {
     return (
         <div id={'skills'} className={styles.skills}>
             <div className={`${commonStyles.container} ${styles.container}`}>
-                <h2 className={styles.title}>Skills</h2>
+                <h2 className={commonStyles.title}>
+                    <span className={commonStyles.upperThenHeader}>EXPERIENCE</span>
+                    EXPERIENCE
+                </h2>
                 <div className={styles.skillsContainer}>
                     <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>
                     <Skill title={'TypeScript'} icon={faJs} description={fakeDescription}/>

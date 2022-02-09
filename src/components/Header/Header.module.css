@@ -1,7 +1,18 @@
 .header {
-    height: 80px;
-    background-color: lightgreen;
+    z-index: 2;
+    height: 85px;
+    background-color: #1e2326;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media (max-width: 500px) {
+    .header {
+        justify-content: center;
+    }
 }

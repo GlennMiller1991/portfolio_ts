@@ -1,14 +1,26 @@
 .up {
     position: fixed;
-    border: 1px solid red;
-    bottom: 5%;
-    left: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F07F81;
+    width: 55px;
+    height: 55px;
+    bottom: 150px;
+    border-radius: 0 5px 5px 0;
+    left: 0;
     opacity: 0;
-    animation: show 2s forwards;
+    animation: show 3s forwards;
+    cursor: pointer;
 }
+
+.svg {
+    color: #1e2326;
+}
+
 
 @keyframes show {
     to {
-        opacity: 1;
+        opacity: .5;
     }
 }

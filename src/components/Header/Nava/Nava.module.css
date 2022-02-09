@@ -1,7 +1,65 @@
 .nava {
-    border: 1px solid black;
     width: 400px;
     display: flex;
     justify-content: space-between;
     margin-right: 50px;
+}
+
+.link {
+    cursor: pointer;
+    font-weight: 800;
+    letter-spacing: .1em;
+    font-family: "Ubuntu", 'monospace';
+    font-size: 1.3em;
+    text-decoration: none;
+    line-height: 1.7;
+    transition: all 0.3s ease-in-out;
+    color: #F0F0F0;
+}
+
+.link:hover {
+    color: #F07F81;
+}
+
+.link:focus {
+    outline: none;
+}
+
+.test {
+    color: #F07F81;
+}
+
+.underMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    height: 3px;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.underTest:before {
+    content: '';
+    display: block;
+    background-color: #F07F81;
+    height: 100%;
+    width: 0;
+    animation: getWidth 0.3s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes getWidth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .nava {
+        margin-right: 0;
+    }
 }

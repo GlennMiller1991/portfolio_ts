@@ -1,6 +1,6 @@
 .wrapper {
-    height: 60vh;
-    background-color: darkorchid;
+    min-height: 60vh;
+    background-color: #252b2f;
 }
 
 .container {

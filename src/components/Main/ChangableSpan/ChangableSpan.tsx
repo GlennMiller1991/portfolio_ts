@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { stateType } from "../../../redux/store";
 import {baseType, changeReverse, changeTypedValue, endTypeCycle} from "../../../redux/reducer";
+import styles from '../Main.module.css'
 
 export const ChangableSpan = React.memo(() => {
     const state = useSelector<stateType, baseType>(state => state.state)
@@ -31,7 +32,7 @@ export const ChangableSpan = React.memo(() => {
         }
     }, [state.typed, state.reverse, state.count, dispatch, state.mainSpans])
     return (
-        <span>
+        <span className={styles.react}>
             {
                 state.typed
             }
