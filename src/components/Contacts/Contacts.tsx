@@ -13,21 +13,24 @@ export const Contacts = React.memo(() => {
                 <form className={styles.inputsContainer}>
                     <div className={styles.inputs}>
                         <div className={styles.fieldContainer}>
-                            <input className={styles.field + ' ' + styles.name} placeholder={'Name'}/>
+                            <input className={styles.field + ' ' + styles.name}/>
                             <div className={styles.underField}></div>
+                            <div className={styles.nameText}>Name</div>
                         </div>
                         <div className={styles.fieldContainer}>
-                            <input className={styles.field + ' ' + styles.email} placeholder={'Email'}/>
+                            <input className={styles.field + ' ' + styles.email}/>
                             <div className={styles.underField}></div>
+                            <div className={styles.nameText}>Email</div>
                         </div>
                         <div className={styles.fieldContainer + ' ' + styles.subject}>
-                            <input className={styles.field + ' ' + styles.subject} placeholder={'Subject'}/>
+                            <input className={styles.field + ' ' + styles.subject}/>
                             <div className={styles.underField}></div>
+                            <div className={styles.nameText}>Subject</div>
                         </div>
                         <div className={styles.fieldContainer + ' ' + styles.message}>
-                        <textarea className={styles.field + ' ' + styles.message}
-                                  placeholder={'Message'}/>
+                        <textarea className={styles.field + ' ' + styles.message}/>
                             <div className={styles.underField}></div>
+                            <div className={styles.nameText}>Message</div>
                         </div>
                         <div className={styles.submit}>
                             <input className={styles.submitBtn} type={'submit'} value={'Send Message'}/>
