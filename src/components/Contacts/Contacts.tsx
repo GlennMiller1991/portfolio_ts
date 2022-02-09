@@ -10,19 +10,30 @@ export const Contacts = React.memo(() => {
                     <span className={commonStyles.upperThenHeader}>GET IN TOUCH</span>
                     CONTACTS
                 </h2>
-                <div>
-                    <form className={styles.inputsContainer}>
-                        <div className={styles.inputs}>
-                            <input defaultValue={'some text'}/>
-                            <input defaultValue={'some text'}/>
-                            <textarea className={styles.textarea}
-                                      defaultValue={'some text'}/>
+                <form className={styles.inputsContainer}>
+                    <div className={styles.inputs}>
+                        <div className={styles.fieldContainer}>
+                            <input className={styles.field + ' ' + styles.name} placeholder={'Name'}/>
+                            <div className={styles.underField}></div>
                         </div>
-                        <div>
-                            <input type={'submit'} value={'submit'}/>
+                        <div className={styles.fieldContainer}>
+                            <input className={styles.field + ' ' + styles.email} placeholder={'Email'}/>
+                            <div className={styles.underField}></div>
                         </div>
-                    </form>
-                </div>
+                        <div className={styles.fieldContainer + ' ' + styles.subject}>
+                            <input className={styles.field + ' ' + styles.subject} placeholder={'Subject'}/>
+                            <div className={styles.underField}></div>
+                        </div>
+                        <div className={styles.fieldContainer + ' ' + styles.message}>
+                        <textarea className={styles.field + ' ' + styles.message}
+                                  placeholder={'Message'}/>
+                            <div className={styles.underField}></div>
+                        </div>
+                        <div className={styles.submit}>
+                            <input className={styles.submitBtn} type={'submit'} value={'Send Message'}/>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     )

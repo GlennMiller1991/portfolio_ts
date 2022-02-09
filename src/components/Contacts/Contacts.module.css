@@ -7,13 +7,10 @@
     flex-direction: column;
 }
 
-.title {
-    background-color: grey;
-}
-
 .inputsContainer {
+    margin-top: 40px;
     height: 70%;
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +18,107 @@
 }
 
 .inputs {
-    border: 1px solid red;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    column-gap: 30px;
+    row-gap: 30px;
 }
 
-.inputs * {
+.inputs input, textarea {
+    line-height: 1.5;
+    font-weight: 400;
+    width: 100%;
+    background-color: transparent;
+    height: 50px;
+    color: #F0F0F0;
+    border: 1px solid #31383d;
+    transition: all 0.5s;
+    padding: 0.9em 1em;
+    box-shadow: none !important;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.field:focus {
+    border-radius: 0;
+    box-shadow: none !important;
+    border: 1px solid #31383d;
+    outline: none;
+}
+
+
+.inputs {
+    display: grid;
+    grid-template-areas:'name email''subject subject''message message''submit submit';
+}
+
+@media (max-width: 1000px) {
+    .inputs {
+        grid-template-areas:'name''email''subject''message''submit';
+    }
+}
+
+.name {
+    grid-area: name;
+}
+
+.email {
+    grid-area: email;
+}
+
+.subject {
+    grid-area: subject;
+}
+
+.message {
+    grid-area: message;
+    overflow: auto;
+    height: 215px;
+    position: relative;
+}
+
+.message::-webkit-scrollbar {
+    width: 2px;
+}
+
+.message::-webkit-scrollbar-thumb {
+    background-color: #f07f81;
+    border-radius: 3px;
+}
+
+.submit {
+    grid-area: submit;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
+}
+
+.submitBtn {
+    width: 150px !important;
+    border: 1px solid #f07f81 !important;
+    color: #f07f81 !important;
+    font-family: 'Roboto Mono', monospace !important;
+}
+
+.underField {
+    height: 2px;
+    position: relative;
+    top: -1px;
+    transition: 0.5s ease;
+    width: 0;
+}
+
+.field:focus + .underField {
+    background-color:  #f07f81;
+    width: 100%;
+}
+
+.fieldContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
 }
