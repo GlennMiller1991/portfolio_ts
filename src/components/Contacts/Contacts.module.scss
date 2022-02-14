@@ -1,3 +1,5 @@
+@import './../../../src/common/styles/Variables.module';
+
 .wrapper {
     min-height: 60vh;
     background-color: #252b2f;
@@ -89,6 +91,7 @@
 }
 
 .submit {
+    position: relative;
     grid-area: submit;
     display: flex;
     justify-content: flex-end;
@@ -100,6 +103,11 @@
     border: 1px solid #f07f81 !important;
     color: #f07f81 !important;
     font-family: 'Roboto Mono', monospace !important;
+    transition: .8s;
+    &:hover {
+        color: $textColor !important;
+        background-color: $themeColor;
+    }
 }
 
 .underField {

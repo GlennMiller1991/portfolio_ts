@@ -1,0 +1,13 @@
+@import './../../../common/styles/Variables.module';
+
+.wrapper {
+  pointer-events: none;
+  position: fixed;
+  @include flexCenter(center);
+  width: 200px;
+  padding: 10px;
+  background-color: #18a5d5;
+  opacity: .7;
+  color: $textColor;
+  border-radius: 10px;
+}
