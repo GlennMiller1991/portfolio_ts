@@ -12,29 +12,44 @@ export const Projects = React.memo(() => {
     const projectEntities = useMemo(() => {
         return [
             {
-                title: 'Portfolio',
+                title: 'TypeScript Portfolio',
                 style: {backgroundImage: `url(${portfolioPic})`},
-                link: 'https://glennmiller1991.github.io/portfolio_ts/'
+                link: 'https://glennmiller1991.github.io/portfolio_ts/',
+                tags: [
+                    'TypeScript', 'Redux', 'SCSS', 'HTML', 'CSS3', 'Hooks'
+                ],
             },
             {
-                title: 'Google Books API',
+                title: 'Looking for Book',
                 style: {backgroundImage: `url(${bookPic})`},
-                link: 'https://glennmiller1991.github.io/looking_for_book/#/'
+                link: 'https://glennmiller1991.github.io/looking_for_book/#/',
+                tags: [
+                    'TypeScript', 'HTML', 'Redux', 'CSS3', 'Google Books API', 'Thunk', 'Hooks'
+                ]
             },
             {
                 title: 'Python Blog',
                 style: {backgroundImage: `url(${pythonPortfolio})`},
-                link: 'https://github.com/GlennMiller1991/PythonPortfolio'
+                link: 'https://github.com/GlennMiller1991/PythonPortfolio',
+                tags: [
+                    'Python', 'JavaScript', 'Flask', 'HTML', 'CSS3', 'SQLAlchemy', 'MySQL',
+                ]
             },
             {
                 title: 'Social Network',
                 style: {backgroundImage: `url(${socnet})`},
-                link: 'https://glennmiller1991.github.io/social_network/#/'
+                link: 'https://glennmiller1991.github.io/social_network/#/',
+                tags: [
+                    'TypeScript', 'Redux', 'HTML', 'CSS3', 'Hooks', 'Thunk', 'StoryBook', 'VK Open API', 'REST API',
+                ]
             },
             {
                 title: 'Test Job',
                 style: {backgroundImage: `url(${testJob})`},
-                link: 'https://glennmiller1991.github.io/test_job/#/'
+                link: 'https://glennmiller1991.github.io/test_job/#/',
+                tags: [
+                    'TypeScript', 'Redux', 'HTML', 'CSS3', 'Hooks'
+                ]
             },
         ]
     }, [])

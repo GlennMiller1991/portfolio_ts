@@ -76,6 +76,7 @@
     overflow: auto;
     height: 215px;
     position: relative;
+    resize: none;
 }
 
 .message::-webkit-scrollbar {
