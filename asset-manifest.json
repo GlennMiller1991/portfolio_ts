@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio_ts/static/css/main.d6277e79.chunk.css",
-    "main.js": "/portfolio_ts/static/js/main.b8b114f9.chunk.js",
-    "main.js.map": "/portfolio_ts/static/js/main.b8b114f9.chunk.js.map",
-    "runtime-main.js": "/portfolio_ts/static/js/runtime-main.84ae0ea4.js",
-    "runtime-main.js.map": "/portfolio_ts/static/js/runtime-main.84ae0ea4.js.map",
-    "static/js/2.889b2551.chunk.js": "/portfolio_ts/static/js/2.889b2551.chunk.js",
-    "static/js/2.889b2551.chunk.js.map": "/portfolio_ts/static/js/2.889b2551.chunk.js.map",
-    "static/js/3.5e23743f.chunk.js": "/portfolio_ts/static/js/3.5e23743f.chunk.js",
-    "static/js/3.5e23743f.chunk.js.map": "/portfolio_ts/static/js/3.5e23743f.chunk.js.map",
+    "main.css": "/portfolio_ts/static/css/main.658f55a0.chunk.css",
+    "main.js": "/portfolio_ts/static/js/main.e44c1973.chunk.js",
+    "main.js.map": "/portfolio_ts/static/js/main.e44c1973.chunk.js.map",
+    "runtime-main.js": "/portfolio_ts/static/js/runtime-main.e354c4f9.js",
+    "runtime-main.js.map": "/portfolio_ts/static/js/runtime-main.e354c4f9.js.map",
+    "static/js/2.aef241e4.chunk.js": "/portfolio_ts/static/js/2.aef241e4.chunk.js",
+    "static/js/2.aef241e4.chunk.js.map": "/portfolio_ts/static/js/2.aef241e4.chunk.js.map",
+    "static/js/3.f86bde59.chunk.js": "/portfolio_ts/static/js/3.f86bde59.chunk.js",
+    "static/js/3.f86bde59.chunk.js.map": "/portfolio_ts/static/js/3.f86bde59.chunk.js.map",
     "index.html": "/portfolio_ts/index.html",
-    "static/css/main.d6277e79.chunk.css.map": "/portfolio_ts/static/css/main.d6277e79.chunk.css.map",
-    "static/js/2.889b2551.chunk.js.LICENSE.txt": "/portfolio_ts/static/js/2.889b2551.chunk.js.LICENSE.txt",
+    "static/css/main.658f55a0.chunk.css.map": "/portfolio_ts/static/css/main.658f55a0.chunk.css.map",
+    "static/js/2.aef241e4.chunk.js.LICENSE.txt": "/portfolio_ts/static/js/2.aef241e4.chunk.js.LICENSE.txt",
     "static/media/book.d579d7a8.png": "/portfolio_ts/static/media/book.d579d7a8.png",
     "static/media/portfolio.d2441210.png": "/portfolio_ts/static/media/portfolio.d2441210.png",
     "static/media/pythonPortfolio.611cb87d.png": "/portfolio_ts/static/media/pythonPortfolio.611cb87d.png",
@@ -19,9 +19,9 @@
     "static/media/testJob.69b8cac9.png": "/portfolio_ts/static/media/testJob.69b8cac9.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.84ae0ea4.js",
-    "static/js/2.889b2551.chunk.js",
-    "static/css/main.d6277e79.chunk.css",
-    "static/js/main.b8b114f9.chunk.js"
+    "static/js/runtime-main.e354c4f9.js",
+    "static/js/2.aef241e4.chunk.js",
+    "static/css/main.658f55a0.chunk.css",
+    "static/js/main.e44c1973.chunk.js"
   ]
 }
