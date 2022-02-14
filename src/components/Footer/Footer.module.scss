@@ -1,5 +1,7 @@
+@import './../../common/styles/Variables.module.scss';
+
 .footer {
-    background-color: #252b2f;
+    background-color: $restColor;
 }
 
 .container {
@@ -15,8 +17,9 @@
 
 .socnetsContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     column-gap: 25px;
+    row-gap: 25px;
     flex-wrap: wrap;
 }
 

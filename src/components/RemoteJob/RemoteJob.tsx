@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './RemoteJob.module.css'
-import commonStyles from './../../common/styles/CommonStyles.module.css'
+import commonStyles from '../../common/styles/CommonStyles.module.scss'
 
 export const RemoteJob = React.memo(() => {
     return (

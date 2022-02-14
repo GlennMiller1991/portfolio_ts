@@ -97,7 +97,6 @@ export const checkAnchorTC = (elements: HTMLDivElement[], currentAnchor: anchorT
         if (((rect.top >= 85 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)) ||
                 (rect.top < 200 && rect.bottom >= (window.innerHeight || document.documentElement.clientHeight)- 100)) &&
             currentAnchor !== elem.id) {
-            console.log(rect, window.pageYOffset)
             dispatch(setCurrentAnchor(elem.id as anchorType))
         }
     }

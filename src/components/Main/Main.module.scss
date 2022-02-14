@@ -1,0 +1,66 @@
+@import './../../common/styles/Variables.module';
+$squareSize: 16px;
+
+.main {
+    color: $textColor;
+    height: 100vh;
+    background-color: $mainColor;
+    .greeting {
+        width: 550px;
+        font-family: $secondaryFont;
+        .rest {
+            color: $secondaryTextColor;
+            font-size: 32px;
+            margin: 5px 15px 15px 0;
+        }
+        .name {
+            font-family: $primaryFont;
+            letter-spacing: 0.1em;
+            font-weight: 100;
+            position: relative;
+            font-size: 45px;
+            @include flexCenter(center);
+            border: 1px solid $textColor;
+            margin: 0;
+            padding: 15px 0;
+            &::before {
+                content: '';
+                display: block;
+                background-color: $themeColor;
+                width: $squareSize;
+                height: $squareSize;
+                position: absolute;
+                bottom: -($squareSize / 2);
+                right: -($squareSize / 2);
+            }
+        }
+        p {
+            font-size: 26px;
+            span {
+                color: $secondaryTextColor;
+            }
+            .keyboardSpan {
+                color: $themeColor;
+                animation: hideShow;
+                animation-iteration-count: infinite;
+                animation-duration: .7s;
+                animation-timing-function: steps(2, jump-none);
+            }
+        }
+    }
+    .photo {
+        width: 300px;
+        height: 400px;
+        background-color: lightgreen;
+    }
+}
+
+@keyframes hideShow {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+

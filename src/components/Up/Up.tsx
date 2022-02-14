@@ -1,5 +1,5 @@
 import React, {useCallback} from "react";
-import styles from './Up.module.css'
+import styles from './Up.module.scss'
 import {faChevronUp} from "@fortawesome/free-solid-svg-icons/faChevronUp";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 

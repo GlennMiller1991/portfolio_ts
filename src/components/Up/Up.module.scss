@@ -1,9 +1,9 @@
+@import './../../common/styles/Variables.module';
+
 .up {
     position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #F07F81;
+    @include flexCenter(center);
+    background-color: $themeColor;
     width: 55px;
     height: 55px;
     bottom: 150px;
@@ -12,12 +12,10 @@
     opacity: 0;
     animation: show 3s forwards;
     cursor: pointer;
+    .svg {
+        color: $mainColor;
+    }
 }
-
-.svg {
-    color: #1e2326;
-}
-
 
 @keyframes show {
     to {

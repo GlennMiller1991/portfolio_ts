@@ -1,6 +1,6 @@
 import React from "react";
-import styles from './Main.module.css'
-import commonStyles from './../../common/styles/CommonStyles.module.css'
+import styles from './Main.module.scss'
+import commonStyles from '../../common/styles/CommonStyles.module.scss'
 import {ChangableSpan} from "./ChangableSpan/ChangableSpan";
 
 export const Main = React.memo(() => {

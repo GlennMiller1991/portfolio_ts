@@ -1,0 +1,61 @@
+@import './../../../common/styles/Variables.module';
+
+.nava {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  @media (max-width: 600px) {margin-right: 0;}
+  .linkContainer {
+    .link {
+      cursor: pointer;
+      font-weight: 500;
+      letter-spacing: .1em;
+      font-family: $primaryFont;
+      font-size: 1.3em;
+      text-decoration: none;
+      line-height: 1.7;
+      transition: all 0.3s ease-in-out;
+      color: $textColor;
+      &:hover {
+        color: $themeColor;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .active {
+      color: $themeColor;
+    }
+
+    .underMenu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+      height: 3px;
+      width: 100%;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .underActive:before {
+      content: '';
+      display: block;
+      background-color: $themeColor;
+      height: 100%;
+      width: 0;
+      animation: getWidth 0.3s ease-in;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@keyframes getWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+

@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import { stateType } from "../../../redux/store";
 import {baseType, changeReverse, changeTypedValue, endTypeCycle} from "../../../redux/reducer";
-import styles from '../Main.module.css'
+import styles from '../Main.module.scss'
 
 export const ChangableSpan = React.memo(() => {
     const state = useSelector<stateType, baseType>(state => state.state)
