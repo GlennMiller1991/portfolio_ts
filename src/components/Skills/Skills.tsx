@@ -34,7 +34,7 @@ export const Skills = React.memo(() => {
             {
                 name:'CSS3',
                 icon:faCss3Alt,
-                description:'Responsive Layout, Media queries and more'},
+                description:'CSS Flex, CSS Grid, Responsive Layout, Media queries and more'},
             {
                 name:'SASS',
                 icon:faSass,
