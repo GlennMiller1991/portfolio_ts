@@ -4,11 +4,15 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 type SocnetPropsType = {
     icon: any,
+    link: string | undefined
 }
 export const Socnet: React.FC<SocnetPropsType> = React.memo((props) => {
+
     return (
         <div className={styles.icon}>
-            <FontAwesomeIcon icon={props.icon} size={'xs'}/>
+            <a href={props.link}>
+                <FontAwesomeIcon icon={props.icon} size={'xs'}/>
+            </a>
         </div>
     )
 })

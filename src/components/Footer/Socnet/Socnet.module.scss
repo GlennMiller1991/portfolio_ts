@@ -14,4 +14,8 @@ $iconSquare: 50px;
         background-color: $textColor;
         border: 1px solid $textColor;
     }
+    a, a:visited {
+        text-decoration: none;
+        color: $textColor;
+    }
 }
