@@ -22,6 +22,7 @@ export const Nava = React.memo(() => {
                 window.scrollTo({top: y, behavior: 'smooth'})
             }
         }, [])
+
         return (
             <div className={styles.nava}>
                 <div className={styles.linkContainer}>

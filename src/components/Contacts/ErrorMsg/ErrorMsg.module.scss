@@ -2,9 +2,11 @@
 
 .wrapper {
   pointer-events: none;
-  position: fixed;
+  position: absolute;
+  top: 0;
+  right: 0;
   @include flexCenter(center);
-  width: 200px;
+  max-width: 200px;
   padding: 10px;
   background-color: #18a5d5;
   opacity: .7;

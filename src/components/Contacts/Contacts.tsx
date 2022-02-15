@@ -157,7 +157,7 @@ export const Contacts = React.memo(() => {
                             </div>
                         </div>
                         <div className={styles.submit}>
-                            <input className={styles.submitBtn}
+                            <input id={'button'} className={styles.submitBtn}
                                    type={'submit'}
                                    value={'Send Message'}
                                    onMouseEnter={onMouseIn}

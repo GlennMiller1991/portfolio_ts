@@ -3,16 +3,14 @@
 .header {
     z-index: 2;
     height: 85px;
-    background-color: $mainColor;
+    background-color: transparent;
     @include flexCenter(flex-end);
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-}
-
-@media (max-width: 600px) {
-    .header {
+    transition: 1.8s;
+    @media (max-width: 1140px) {
         justify-content: center;
     }
 }

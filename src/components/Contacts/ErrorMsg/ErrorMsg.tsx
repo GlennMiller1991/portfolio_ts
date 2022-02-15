@@ -10,12 +10,9 @@ type ErrorMsgPropsType = {
     error: string,
 }
 export const ErrorMsg: React.FC<ErrorMsgPropsType> = React.memo((props) => {
+
     return (
-        <div className={styles.wrapper}
-             style={{
-                 top: props.position.screenY,
-                 left: props.position.screenX,
-             }}>
+        <div className={styles.wrapper}>
             {
                 props.error
             }

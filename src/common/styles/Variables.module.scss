@@ -12,3 +12,7 @@ $borderColor: #31383d;
   align-items: center;
   justify-content: $justifyContentOption;
 }
+
+:export {
+  mainColor: $mainColor;
+}
