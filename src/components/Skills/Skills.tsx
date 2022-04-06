@@ -12,7 +12,8 @@ import {faHighlighter} from "@fortawesome/free-solid-svg-icons/faHighlighter";
 import {faEdit} from "@fortawesome/free-solid-svg-icons/faEdit";
 import {faTextHeight} from "@fortawesome/free-solid-svg-icons/faTextHeight";
 import {faPython} from "@fortawesome/free-brands-svg-icons/faPython";
-
+import {faChartArea} from "@fortawesome/free-solid-svg-icons/faChartArea";
+import {faDigitalTachograph} from "@fortawesome/free-solid-svg-icons/faDigitalTachograph";
 
 
 export const Skills = React.memo(() => {
@@ -70,6 +71,16 @@ export const Skills = React.memo(() => {
                 icon:faEdit,
                 description:''
             },
+            {
+                name: 'Data Viz',
+                icon: faChartArea,
+                description: 'SVG, D3'
+            },
+            {
+                name: 'Other API',
+                icon: faDigitalTachograph,
+                description: 'VK API, 2GIS API'
+            }
 
         ]
     }, [])

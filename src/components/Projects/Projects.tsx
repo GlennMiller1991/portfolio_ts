@@ -7,6 +7,8 @@ import bookPic from './../../../src/assets/pic/book.png'
 import socnet from './../../../src/assets/pic/socnet.png'
 import testJob from './../../../src/assets/pic/testJob.png'
 import pythonPortfolio from './../../../src/assets/pic/pythonPortfolio.png'
+import map from './../../../src/assets/pic/map.png'
+import graph from './../../../src/assets/pic/graph.jpg'
 
 export const Projects = React.memo(() => {
     const projectEntities = useMemo(() => {
@@ -51,6 +53,22 @@ export const Projects = React.memo(() => {
                     'TypeScript', 'Redux', 'HTML', 'CSS3', 'Hooks'
                 ]
             },
+            {
+                title: 'Map Object Management',
+                style: {backgroundImage: `url(${map})`},
+                link: 'https://glennmiller1991.github.io/map/',
+                tags: [
+                    'TypeScript, JavaScript, HTML, SCSS, Hooks, 2GIS API',
+                ]
+            },
+            {
+                title: 'Graph Builder',
+                style: {backgroundImage: `url(${graph})`},
+                link: "https://GlennMiller1991.github.io/graph",
+                tags: [
+                    'TypeScript, JavaScript, HTML, SCSS, Hooks, SVG'
+                ]
+            }
         ]
     }, [])
     return (

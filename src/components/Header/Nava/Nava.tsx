@@ -40,7 +40,7 @@ export const Nava = React.memo(() => {
                 <div className={styles.linkContainer}>
                     <NavLink className={() => linkStyle('skills')}
                              onClick={() => scrollTo('skills')}
-                             to={'#skills'}>Skills</NavLink>
+                             to={'#skills'}>Experience</NavLink>
                     <div className={divStyle('skills')}>{''}</div>
                 </div>
                 <div className={styles.linkContainer}>
